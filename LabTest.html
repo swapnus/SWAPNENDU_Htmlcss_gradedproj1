@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="Labtest_Styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pharmacy</h1>
+    </header>
+    <section id="navigate">
+        <nav>
+            <ul class="menu">
+                <li><a href="Pharmacy_home.html">Home</a></li>
+                <li><a href="#">Our Medicines</a>
+                    <ul id="ourmedicines">
+                        <li> <a href="#">Fever</a> </li>
+                        <li> <a href="#">Muscle Pains</a> </li>
+                        <li> <a href="#">Cold and Cough</a> </li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Health Care</a>
+                    <ul id="healthcare">
+                        <li> <a href="#">Baby Care</a> </li>
+                        <li> <a href="#">Skin Care</a> </li>
+                        <li> <a href="#">Home Care</a> </li>
+                        <li> <a href="#">Personal Care</a> </li>
+                        <li> <a href="#">Pet Care</a> </li>
+                    </ul>
+                </li>
+                <li><a href="LabTest.html">Lab Test</a></li>
+            </ul>
+        </nav>
+    </section>
+     
+    <section id="lab">
+        <div class="row">
+            <div class="column" id="labform">
+                <form action="lab_details">
+                    <ol>
+                        <li>
+                            <article>
+                                <h3> Your Contact Details</h3>
+                                <label for="Full name"></label>
+                                <input type="text" name="Full Name" placeholder="Full Name" required>
+    
+                                <label for="Patient Id if exists"></label>
+                                <input type="text" name="Patient Id if exists" placeholder="Patient Id if exists">
+                                <label for="Contact Number"></label>
+                                <input type="text" name="Contact Number" placeholder="Contact Number" required>
+    
+                                <label for="Email Id"></label>
+                                <input type="text" name="Email Id" placeholder="Email Id">
+                            </article>
+                        </li>
+                        <li>
+    
+                            <article>
+                                <h3> Address</h3>
+                                <label for="housenumber"></label>
+                                <input type="text" name="H:No" placeholder="H:No" required>
+    
+                                <label for="street"></label>
+                                <input type="text" name="street" placeholder="Street" required>
+    
+                                <label for="area"></label>
+                                <input type="text" name="area" placeholder="Area" required>
+    
+                                <br><br>
+                                <label for="district">District</label><br>
+                                <select name="district" id="district" required>
+                                    <option value="">Choose</option>
+                                    <option value="uppal">Uppal</option>
+                                    <option value="ramnagar">Ramnagar</option>
+                                    <option value="bodauppal">Bodauppal</option>
+                                    <option value="mahaboobnagar">Mahaboobnagar</option>
+                                </select>
+                            </article>
+                        </li>
+                        <li>
+    
+                            <article>
+                                <h3> Choose the Test Type</h3>
+                                <p>(Check at least one box without fail)</p><br>
+                                <input type="checkbox" id="c1" name="option1" value="CBC">
+                                <label for="c1">CBC</label>
+                                <br>
+                                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                                <label for="c2">Complete Urine</label>
+                                <br>
+                                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                                <label for="c3">Lipid Profile</label>
+                                <br>
+                                <input type="checkbox" id="c4" name="option3" value="Thyroid Stimulating Hormone(TSH)">
+                                <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                                <br>
+                                <input type="checkbox" id="c5" name="option3" value="Glucose Test">
+                                <label for="c5">Glucose Test</label>
+                            </article>
+                        </li>
+                        <li>
+    
+                            <article>
+                                <h3> Do you want a hard copy of the report also?</h3>
+    
+                                <input type="radio" id="c6" name="option" value="Yes">
+                                <label for="c6">Yes</label>
+                                <br>
+                                <input type="radio" id="c7" name="option" value="No">
+                                <label for="c7">No</label>
+                            </article>
+                        </li>
+                        <li>
+    
+                            <article>
+                                <h3> Select Your Comfortable Date and Time</h3>
+                                <label for="date&time"></label>
+                                <input type="date" name="date" id="date">
+                                <input type="time" name="time" id="time">
+                            </article>
+                        </li>
+                    </ol>
+                    <button type="submit"> Submit</button>
+                    <button type="reset">Reset</button>
+                    
+                </form>
+            </div>
+            <div class="column">
+                <img class="lab-image" src="images/Lab-Test/lab-test.jpg" alt="labtest">
+            </div>
+        </div>
+    </section>
+    
+    <footer>@Copyright. Only for demonstration purposes.</footer>
+</body>
+
+
+</html>
